@@ -18,6 +18,17 @@ namespace Narail
                 url: "hakkimizda",
                 defaults: new { controller = "About", action = "Index"}
             );
+            
+            routes.MapRoute(
+                name: "Blog",
+                url: "Blog",
+                defaults: new { controller = "Blog", action = "Index"}
+            );
+            routes.MapRoute(
+                name: "Contact",
+                url: "iletisim",
+                defaults: new { controller = "Contact", action = "Index" }
+            );
 
             routes.MapRoute(
                 name: "Default",
