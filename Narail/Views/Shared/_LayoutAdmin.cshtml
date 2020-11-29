@@ -328,18 +328,15 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">view_list</i>
-                            <span>Tables</span>
+                            <i class="material-icons">edit</i>
+                            <span>Yazar Yönetimi</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="pages/tables/normal-tables.html">Normal Tables</a>
+                        <ul class="ml-menu col-grey">
+                            <li class="active">
+                                <a href="@Url.Action("Index","AuthorAdmin")">Yazarlar</a>
                             </li>
-                            <li>
-                                <a href="pages/tables/jquery-datatable.html">Jquery Datatables</a>
-                            </li>
-                            <li>
-                                <a href="pages/tables/editable-table.html">Editable Tables</a>
+                            <li class="active">
+                                <a href="@Url.Action("Create","AuthorAdmin")">Yazar Ekle</a>
                             </li>
                         </ul>
                     </li>
